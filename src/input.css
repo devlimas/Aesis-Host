@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 .btn-custom {
-	@apply bg-gray-700 p-2 border-4 border-gray-700 rounded-2xl text-white transition duration-300;
+	@apply block w-full md:w-auto text-center bg-gray-700 px-4 py-3 border border-gray-700 rounded-2xl text-white transition duration-300;
 }
 .btn-custom:hover {
 	@apply bg-white text-black;
