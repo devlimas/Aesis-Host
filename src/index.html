@@ -3,31 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-        <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+        <link href="dist/output.css" rel="stylesheet">
         <title>AEGIS Host</title>
 <body>
 
-    <header class="bg-gray-900 w-full py-5 px-12 flex justify-between">
+    <header class="relative z-50 bg-gray-900 w-full py-5 px-12 flex justify-between">
 
         <div class=""><img class="size-20" src="img/database.png" alt=""></div>
         <div class="mt-7">
             <ul class="flex gap-2">
                 <li>
-                    <a href="#beneficios" class="bg-gray-700 p-2 border-2 border-gray-700 rounded-2xl text-white hover:text-red-800 transition duration-300">Home</a>
+                    <a href="#beneficios" class="btn-custom">Home</a>
                 </li>
 
                 <li>
-                    <a href="#planos" class="bg-gray-700 p-2 border-2 border-gray-700 rounded-2xl text-white hover:bg-green-400 hover:text-red-800 transition duration-300">Planos</a>
+                    <a href="#planos" class="btn-custom">Planos</a>
                 </li>
 
                 <li>
-                    <a href="#busca" class="bg-gray-700 p-2 border-2 border-gray-700 rounded-2xl text-white hover:text-red-800 transition duration-300">Contato</a>
+                    <a href="#busca" class="btn-custom">Contato</a>
                 </li>
 
                 <li>
-                    <a href="#contato" class="bg-gray-700 p-2 border-2 border-gray-700 rounded-2xl text-white hover:text-red-800 transition duration-300">Login</a>
+                    <a href="#contato" class="btn-custom">Login</a>
                 </li>
             </ul>
         </div>
@@ -37,17 +36,17 @@
         <div class="flex">
             <img class="relative w-full h-121 object-cover" src="img/banner.png" alt="">
 
-            <div class="absolute inset-0 flex flex-col items-center justify-center text-center px-4">
+            <div class="absolute inset-0 z-10 flex flex-col items-center justify-center text-center px-4">
                 
-                <h1 class="text-white text-4xl md:text-6xl font-bold mb-4">AEGIS Host</h1>
+                <h1 class="text-white text-4xl md:text-6xl font-bold mb-8">AEGIS Host</h1>
                 
-                <p class="text-white text-xl md:text-3xl font-bold max-w-4xl">Infraestrutura robusta para mentes inovadoras</p>
+                <p class="text-white text-xl md:text-3xl font-bold max-w-4xl mt-2 mb-15">Infraestrutura robusta para mentes inovadoras</p>
                 
             </div>
 
         </div>
 
-        <div class="flex justify-center items-center space-x-10 py-10 m-15">
+        <div class="flex justify-center items-center space-x-10 px-12 py-10 m-5">
             
             <section class="w-90 text-center bg-white">
                 <i class="fa-solid fa-shield-halved text-green-500 text-5xl"></i>
@@ -72,7 +71,7 @@
             
         </div>
 
-        <div class="m-20 justify-center items-center">
+        <div class="m-5 justify-center items-center">
 
             <h2 class="text-center font-bold text-3xl">Planos e Preços</h2>
             <p class="text-center text-gray-700 text-lg mt-4">Selecione o plano perfeito pra você!</p>
@@ -82,7 +81,7 @@
         <div class="flex justify-center items-center space-x-20 m-8">
 
             <section class="border-3 border-gray-900 rounded-md p-2">
-                <h6 class="text-white text-center justify-center bg-gradient-to-r from-gray-500 via-gray-700 to-gray-900 border-transparent rounded-lg p-2 hover:from-green-400 hover:via-green-500 hover:to-green-700">R$15/mês</h6>
+                <h6 class="service-custom">R$15/mês</h6>
                 <ol class="bg-white text-center p-2">
                     <li class="p-2 border-b-2 border-gray-300">PADRÃO</li>
                     <li class="p-2 border-b-2 border-gray-300">2GB de espalo em disco</li>
@@ -91,11 +90,11 @@
                     <li class="p-2 border-b-2 border-gray-300">C-Panel</li>
                     <li class="p-2 border-b-2 border-gray-300">Suporte 24/7</li>
                 </ol>
-                <a class="flex text-white text-xl text-center justify-center bg-green-500 border-transparent rounded-lg p-1 bg-gradient-to-r from-gray-500 via-gray-700 to-gray-900 hover:from-red-600 hover:via-red-600 hover:to-red-600" href="">Selecionar</a>
+                <a class="btn-service-custom" href="">Selecionar</a>
             </section>
 
             <section class="border-3 border-gray-900 rounded-md p-2">
-                <h6 class="text-white text-center justify-center bg-gradient-to-r from-gray-500 via-gray-700 to-gray-900 border-transparent rounded-lg p-2 hover:from-green-400 hover:via-green-500 hover:to-green-700">R$30/mês</h6>
+                <h6 class="service-custom">R$30/mês</h6>
                 <ol class="bg-white text-center p-2">
                     <li class="p-2 border-b-2 border-gray-300">VIP</li>
                     <li class="p-2 border-b-2 border-gray-300">5GB de espalo em disco</li>
@@ -104,11 +103,11 @@
                     <li class="p-2 border-b-2 border-gray-300">C-Panel</li>
                     <li class="p-2 border-b-2 border-gray-300">Suporte 24/7</li>
                 </ol>
-                <a class="flex text-white text-xl text-center justify-center bg-green-500 border-transparent rounded-lg p-1 bg-gradient-to-r from-gray-500 via-gray-700 to-gray-900 hover:from-red-600 hover:via-red-600 hover:to-red-600" href="">Selecionar</a>
+                <a class="btn-service-custom" href="">Selecionar</a>
             </section>
 
             <section class="border-3 border-gray-900 rounded-md p-2">
-                <h6 class="text-white text-center justify-center bg-gradient-to-r from-gray-500 via-gray-700 to-gray-900 border-transparent rounded-lg p-2 hover:from-green-400 hover:via-green-500 hover:to-green-700">R$50/mês</h6>
+                <h6 class="service-custom">R$50/mês</h6>
                 <ol class="bg-white text-center p-2">
                     <li class="p-2 border-b-2 border-gray-300">PREMIUM</li>
                     <li class="p-2 border-b-2 border-gray-300">10GB de espalo em disco</li>
@@ -117,11 +116,11 @@
                     <li class="p-2 border-b-2 border-gray-300">C-Panel</li>
                     <li class="p-2 border-b-2 border-gray-300">Suporte 24/7</li>
                 </ol>
-                <a class="flex text-white text-xl text-center justify-center bg-green-500 border-transparent rounded-lg p-1 bg-gradient-to-r from-gray-500 via-gray-700 to-gray-900 hover:from-red-600 hover:via-red-600 hover:to-red-600" href="">Selecionar</a>
+                <a class="btn-service-custom" href="">Selecionar</a>
             </section>
 
             <section class="border-3 border-gray-900 rounded-md p-2">
-                <h6 class="text-white text-center justify-center bg-gradient-to-r from-gray-500 via-gray-700 to-gray-900 border-transparent rounded-lg p-2 hover:from-green-400 hover:via-green-500 hover:to-green-700">R$100/mês</h6>
+                <h6 class="service-custom">R$100/mês</h6>
                 <ol class="bg-white text-center p-2">
                     <li class="p-2 border-b-2 border-gray-300">PREMIUM MAX</li>
                     <li class="p-2 border-b-2 border-gray-300">20GB de espalo em disco</li>
@@ -130,7 +129,7 @@
                     <li class="p-2 border-b-2 border-gray-300">C-Panel</li>
                     <li class="p-2 border-b-2 border-gray-300">Suporte 24/7</li>
                 </ol>
-                <a class="flex text-white text-xl text-center justify-center bg-green-500 border-transparent rounded-lg p-1 bg-gradient-to-r from-gray-500 via-gray-700 to-gray-900 hover:from-red-600 hover:via-red-600 hover:to-red-600" href="">Selecionar</a>
+                <a class="btn-service-custom" href="">Selecionar</a>
             </section>
 
         </div>
@@ -172,7 +171,7 @@
         </div>
     </main>
 
-    <footer class="bg-gray-900 p-4">
+    <footer class="bg-gray-900 p-4 z-10">
         <div class="flex justify-center items-center gap-4">
             <a href="#" class="text-gray-500 hover:text-gray-300 transition">Política de Privacidade</a>
             <a href="#" class="text-gray-500 hover:text-gray-300 transition">Termos de Serviço</a>
