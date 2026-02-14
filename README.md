@@ -1,4 +1,4 @@
-# Aesis-Host
+# Aesis-Host(Finalizado)
 
 ### Ideia do projeto:
 Um lading page básica de hosting que oferece diversos planos
