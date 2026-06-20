@@ -12,3 +12,7 @@ Um lading page básica de hosting que oferece diversos planos
  - Utility-First: Como estilizar elementos sem criar arquivos .css gigantes.
  - Responsividade: Uso dos prefixos sm:, md: e lg: para adaptar a tela.
  - Entedimento melhor sobre flexbox e gridbox
+
+![](img/print1.png)
+![](img/print3.png)
+![](img/print2.png)
